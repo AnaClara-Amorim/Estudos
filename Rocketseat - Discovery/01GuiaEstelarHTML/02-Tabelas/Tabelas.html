@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Elemento Table</h1>
+
+    <p>
+        - Prós: visualização de dados via linhas e colunas, boa acessibilidade para leitura dos dados <br>
+        - Contras: pouco flexível, precisa de estilização para melhorar visualização <br>
+        Não se deve usar para criar layouts
+    </p>
+    <h2>Estrutura:</h2>
+    <caption>Pessoas por idade</caption> <!--Descreve a tabela-->
+    <table>
+        <thead> <!--Aqui fica o cabeçalho da tabela-->
+            <tr> <!--Linha-->
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+
+        <tbody> <!--Aqui fica o corpo da tabela-->
+            <tr>
+                <td>Mayk</td>
+                <td>35</td>
+            </tr>
+            <tr>
+                <td>Clara</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+
+        <tfoot> <!--O rodapé da tabela-->
+            <tr>
+                <td>Total</td>
+                <td>Duas pessoas</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <p>Toda essa organização se dá devido à acessibilidade</p>
+    <p>Vamos então ter uma tabela onde terá: <br>
+        Para duas lojas: 
+        Quantos produtos foram produzidos, quantos foram venddos e agrupados por nome dos produtos
+    </p>
+
+    <table>
+        <caption>Produzidos x Vendidos por Loja</caption>
+        <colgroup> <!--Usada para agrupar grandes grupos-->
+            <col>
+            <col span="2" style="background-color: rgb(175, 28, 77);"> <!--Adicionado o span para dar conta de duas colunas-->
+            <col span="2" style="background-color: blueviolet;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2" ></th> <!--Para "voltar uma casa" foi adicionado o rowspan para ocupar uma linha-->
+                <th colspan="2" scope="colgroup">Afonso Pena</th> <!--Para ocupar colunas o colspan. O Scope foi adicionado para acessibilidade.-->
+                <th colspan="2" scope="colgroup">Antônia Pereira</th>
+            </tr>
+            <tr>
+                <th scope="col">Produzidos</th> <!--Aqui foi adicionado scopo para colunas, também para acessibilidade-->
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>   
+            </tr>
+        </thead>
+            
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th> <!--Foi adicionado escopo de linha também para acessibilidade-->
+                <td>50</td>
+                <td>30</td>
+                <td>20</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <th scope="row">Baldes</th>
+                <td>10</td>
+                <td>10</td>
+                <td>30</td>
+                <td>25</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+</html>

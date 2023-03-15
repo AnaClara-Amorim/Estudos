@@ -1,0 +1,10 @@
+@import url(00index.html);
+
+h1 {
+    color: blueviolet;
+}
+
+strong {
+    color: red;
+}
+/* Assim que se comenta em css*/
