@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dipositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/1.png" type="image/png"> <!--Esse source colocado acima do anterior, do menor para o maior pois foi mudado de min para max-->
+        <source media="(max-width: 1500px)" srcset="imagens/2.png" type="image/png"> <!--mudou min pra max, por padrão vai carregar a imagem maior, mas se estiver grande demais-->
+        <img src="imagens/3.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo audio em html5</h1>
+    <audio src="midia/happy-mistake.m4a"  controls autoplay></audio> <!--controls para adicionar o controle, autoplay para tocar--> <!--compatível com mp3, wav e ogg-->
+
+    <!--<audio>
+        <source src="midia/happy-mistake.m4a" type="audio/m4a"> lista de midia types: https://www.iana.org/assignments/media-types/media-types.xhtml
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+    </audio>--> 
+    
+    <h1>Reproduzindo vídeo em html5</h1>
+
+    <!--Handbreak como sugestão de conversor de vídeo-->
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    
+    <video src="midia/meu-video.mp4" width="560" poster="" controls></video> <!--o width e controls só foram adicionados posteriormente. é recomendado colocar vários formatos de vídeos. poster para fazer a thumb se quiser-->
+
+    <!--
+        <video controls >
+        <source src="mp4" type="video/mp4">
+        <source src=".m4v" type="video/mp4"> <!--não, clara do futuro, isso não é um erro
+        <source src=".webm" type="video/ogg">
+        <p>seu navegador nao tem compatibilidade com reprodução de vídeos</p>
+    </video>
+
+    -->
+    
+    <h1>Inserindo vídeos do YouTube</h1>
+    <!--Ir no youtube, compartilhar, incorporar, copiar-->
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+</body>
+</html>
+

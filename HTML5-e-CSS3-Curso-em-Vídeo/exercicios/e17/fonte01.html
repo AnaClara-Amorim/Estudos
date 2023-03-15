@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; /*Caso não consiga achar uma fonte, vai achar outra*/
+            font-size: 16px;
+            /*1em = 16px
+            1em é igual ao tamanho natural*/
+
+            /*font-weight é o peso da fonte, lighter, normal, bold, bolder ou de 100 à 900*/ 
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        h1{
+            /*shorthand pra font: font-style, weigth, size e family*/
+            font: italic bolder 3em arial;
+        }
+        h2{
+            font: bold 2em arial;
+       }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, consectetur vitae, quia non consequatur tempora fuga sit, aperiam at optio in amet placeat eaque nisi pariatur repudiandae quibusdam vero! Aliquid.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad eveniet minus ipsam, possimus deleniti animi ex laboriosam dolores nesciunt eaque voluptatum dolorum? Unde, natus! Ipsam repellat quod cum maxime itaque?</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, quo. Rerum architecto magnam ea suscipit odit beatae facere deserunt a. Fugiat dolores enim ex sit impedit adipisci saepe ratione molestias.</p>
+    <p>Dica de  <a href="http://www.w3schools.com/cssref/css_websafe_fonts.php" target="_blank">site para verificar fontes que combinam</a></p>
+</body>
+</html>

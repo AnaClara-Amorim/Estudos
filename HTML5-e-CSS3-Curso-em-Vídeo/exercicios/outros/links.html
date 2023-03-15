@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style> /*Mais pseudo classe, nesse exemplo: visited para links clicados, active, no momento clicado*/
+
+        /*  SELETORES PERSONALIZADOS
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-elements
+        > = children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: darkblue;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: yellow;
+        }
+
+        /*Pseudoelemento -> ::*/ 
+        .especial::before{
+            content: '< ';
+            font-weight: normal;
+            color: darkgray;
+        }
+        .especial::after{ /*Texto após o citado*/
+            content: ' >';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://gustavoguanabara.github.io">Repositório github</a></li>
+        <li class="especial"><a href="https://youtube.com">Canal do youtube</a></li>
+        <li><a href="https://www.fasfwfwe.com">Site do curso em vídeo</a></li>
+
+    </ul>
+</body>
+</html>

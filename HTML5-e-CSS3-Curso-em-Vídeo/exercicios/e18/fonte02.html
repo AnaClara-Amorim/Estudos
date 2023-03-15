@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'handri';
+            src: url('SimpleHandmade.ttf') format('truetype'), url('SimpleHandmade.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;            
+            /*
+            Tipos de format
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            -truetype-aat (Apple advanced typography)
+            - Svg
+            */
+        }
+        body{
+            font-family: 'handri', Times, serif;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif; 
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, et repellendus nesciunt fugit maiores veritatis molestias in expedita pariatur corrupti doloribus deserunt dolor, iusto ipsa alias aut quidem minus nulla!</p>
+    <a href="https://www.dafont.com/pt/">Outro site pra baixar fontes</a>
+    <p>Baixa-se o arquivo, copia-se para a pasta onde vai ser utilizado. Para carregar, é necessário</p>
+    <h2>Para descobrir a fonte de um site, pode-se usar a extensão font ninja</h2>
+    <h2>Para descobrir fonte de imagem WhatFontIs, Font Squirrel e MyFonts</h2>
+
+</body>
+</html>
