@@ -5,4 +5,4 @@ Neste curso, estou aprendendo o básico de HTML5 e CSS3. Nem todos exercícios e
 
  No começo do módulo 3 foi dada uma pausa nos estudos de HTML5 E CSS3 para estudar Git e GitHub. 
 
- <a href="https://anaclara-amorim.github.io/projeto-android/" target="_blank">Clica aqui pra ver o site feito como desafio final do 2º módulo</a>
+ <a href="https://anaclara-amorim.github.io/Estudos/Projeto-Android-Curso-em-Vídeo/" target="_blank">Clica aqui pra ver o site feito como desafio final do 2º módulo</a>
