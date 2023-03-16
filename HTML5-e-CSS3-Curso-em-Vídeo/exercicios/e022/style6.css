@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+    background-color: black; /*é ideal configurar o fundo mesmo que tenha imagem como background, pois se o servidor estiver lento, o usuário vai ver o fundo*/
+    height: 100vh;
+    background-image: url(Imagens/wallpaper002.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; /*por padrão é auto, mas existe o CONTAIN que faz com que a imagem seja 100% exibida e o COVER, que corta a imagem mas faz ela caber na imagem inteira ocupa 100% da vp */
+}
+
+main {
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    border: 1px solid darkblue;
+    border-radius: 15px;
+}
