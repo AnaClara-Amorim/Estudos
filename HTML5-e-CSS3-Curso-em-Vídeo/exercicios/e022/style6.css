@@ -1,17 +1,28 @@
 @charset "UTF-8";
 
 body {
-    background-color: black; /*é ideal configurar o fundo mesmo que tenha imagem como background, pois se o servidor estiver lento, o usuário vai ver o fundo*/
     height: 100vh;
+    
+    /** background-color: black;  ideal configurar o fundo mesmo que tenha imagem como background, pois se o servidor estiver lento, o usuário vai ver o fundo
     background-image: url(Imagens/wallpaper002.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; /*por padrão é auto, mas existe o CONTAIN que faz com que a imagem seja 100% exibida e o COVER, que corta a imagem mas faz ela caber na imagem inteira ocupa 100% da vp */
+    background-size: cover; /*por padrão é auto, mas existe o CONTAIN que faz com que a imagem seja 100% exibida e o COVER, que corta a imagem mas faz ela caber na imagem inteira ocupa 100% da vp 
+    background-attachment: fixed; /*Por padrão é scroll, tem a opção fixed, onde você rola a página e fica fixo */
+
+    /* Shorthand - Background 
+    color, image, position, repeat, size, attachment
+    */
+
+    /* background: black url(Imagens/wallpaper002.jpg) center center no-repeat fixed; o cover não funciona então adicionamos ele embaixo ou fazemos como abaixo, colocando uma barra
+    background-size: cover; */
+
+    background: black url(Imagens/wallpaper002.jpg) center center / cover no-repeat fixed; /*A barra (/) é usada para separar as propriedades de posicionamento (position) e tamanho (size) da imagem de fundo na ordem shorthand da propriedade background no CSS. Isso ajuda a evitar confusão entre as propriedades de tamanho e posicionamento da imagem de fundo.*/
 }
 
 main {
     background-color: white;
-    width: 400px;
+    max-width: 400px;
     padding: 10px;
     margin: auto;
     border: 1px solid darkblue;
