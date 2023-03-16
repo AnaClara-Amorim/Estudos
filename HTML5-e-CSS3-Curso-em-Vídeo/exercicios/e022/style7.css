@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+#container{
+    background-image: url(Imagens/target001.png);
+    background-size: 100% 100%;
+    
+    position: relative; /*por padrão é relativo*/
+    height: 96vh;
+    background-color: purple;
+    height: 500px;
+    padding: 10px;
+}
+
+#conteudo {
+    background-image: url(Imagens/target001.png);
+    background-size: 100% 100%;
+
+    position: absolute;
+    background-color: yellow;
+    height: 200px;
+    width: 400px;
+
+    left: 50%; /*pode-se usar caso tenha colocado o absolute*/
+    top: 50%;
+
+    transform: translate(-50%, -50%); /*o menos mexe para esquerda e para cima*/
+    
+}
