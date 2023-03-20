@@ -8,6 +8,6 @@
 
  <a href="https://anaclara-amorim.github.io/Estudos/Projeto-Android-Curso-em-Vídeo/" target="_blank">Clique aqui pra ver o site feito como desafio no 2º módulo</a>
 
- <a href="https://anaclara-amorim.github.io/Estudos/Projeto-Cordel/" target="_blank">Clica aqui pra ver o site feito como desafio no 3º módulo</a>
+ <a href="https://anaclara-amorim.github.io/Estudos/Projeto-Cordel-Curso-em-Video/" target="_blank">Clica aqui pra ver o site feito como desafio no 3º módulo</a>
 
 
