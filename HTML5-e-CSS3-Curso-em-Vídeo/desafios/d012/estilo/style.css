@@ -12,8 +12,7 @@
 
 * {
     margin: 0px;
-    padding: 0px;
-    
+    padding: 0px;    
 }
 
 html, body {
@@ -58,6 +57,10 @@ section {
     font-size: 3vw;
 }
 
+section > p {
+    padding-bottom: 2em;
+}
+
 .normal {
     background-color: white;
     color: black;
@@ -66,12 +69,27 @@ section {
 .imagem {
     background-color: rgb(34, 34, 34);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.494); /*inset é para dentro*/
+    background-size: cover;
+    background-attachment: fixed; /*para dar o efeito paralax*/
 }
 
 section.imagem > p {
     display: inline-block;
     padding: 5px;
-    background-color: rgba(46, 46, 46, 0.762);
+    background-color: rgba(46, 46, 46, 0.528);
+    border-radius: 5px;
+    text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.543);
+}
+
+#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
 }
 
 footer {
