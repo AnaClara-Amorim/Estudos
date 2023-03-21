@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        thead, tfoot {
+            background-color: blueviolet;
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: rgb(207, 163, 248);
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+
+    <!--Anatomia para tabelas grandes
+        caption para título da tabela fora da tabela
+        thead
+        tr, td, th
+        tbody
+        tr, td, th
+        tfoot    
+        tr, td, th
+    -->
+
+    <table>
+         <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>            
+                <th scope="col">Estado</th> <!-- já fica centralizado e em negrito e também não é um dado, é um título-->
+                <th scope="col" style="width: 50px;">População</th> <!--O scope é semantico, o col é de coluna-->
+            </tr>
+        </thead>
+ 
+        <tbody>
+            <tr>
+                <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png" alt=""> São Paulo</td>
+                <td class="num">46 024 937</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20 732 660</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">16 615 526</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 659 023</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 835 379</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 693 929</td>
+            </tr>
+            <tr>
+                <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png"> Pernambuco</td>
+                <td class="num">9 051 113</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 936 431</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 442 962</td>
+            </tr>
+        </tbody>
+            
+        <tfoot> <!-- Pode ser colocado até mesmo embaixo do head, não vai fazer diferença por conta da semântica-->
+            <tr>
+                <th scope="row">Total de Habitantes</th> <!--o row é semantico, o row é de linha-->
+                <td class="num"><strong>NÚMERO TOTAL AQUI</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
