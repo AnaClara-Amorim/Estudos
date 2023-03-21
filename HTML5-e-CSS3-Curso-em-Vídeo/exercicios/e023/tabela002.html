@@ -14,6 +14,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative; /*PARA FIXAR CABEÇALHO*/
         }
 
         td, th {
@@ -35,6 +36,15 @@
             font-weight: bold;
             padding: 5px;
             background-color: rgb(207, 163, 248);
+        }
+        thead { /*PARA FIXAR CABEÇALHO*/
+                position: sticky;
+                top: -1px;
+                background-color: blueviolet;
+        }
+
+        tr:hover {
+            border: 2px solid rgb(226, 9, 74);
         }
 
         /*EFEITO ZEBRADO*/
