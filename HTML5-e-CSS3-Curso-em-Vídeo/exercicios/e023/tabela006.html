@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+
+    <style>
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption { 
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(158, 92, 220);
+        }
+
+        #container {
+            overflow-x: auto; /*x pois se está lidando com a rolagem horizontal, conteúdo fica travado enquanto a tabela rola lateralmente*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, repellendus praesentium repellat soluta incidunt reprehenderit ex! Molestias facere temporibus nemo, ducimus tempora delectus incidunt, perferendis dolore quae laboriosam asperiores laborum!</p>
+
+    <div id="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Produtos</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>TV</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                    <td>01</td>
+                </tr>
+                <tr>
+                    <td>PC</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>02</td>
+                    <td>02</td>
+                </tr>
+                <tr>
+                    <td>Mouse</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>03</td>
+                    <td>03</td>
+                </tr>
+                <tr>
+                    <td>Celular</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>04</td>
+                    <td>04</td>
+                </tr>
+                <tr>
+                    <td>Teclado</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>05</td>
+                    <td>05</td>
+                </tr>
+                <tr>
+                    <td>Notebook</td>
+                    <td>06</td>
+                    <td>06</td>
+                    <td>06</td>
+                    <td>06</td>
+                    <td>06</td>
+                    <td>06</td>
+                    <td>06</td>
+                    <td>06</td>
+                    <td>06</td>
+                    <td>06</td>
+                    <td>06</td>
+                    <td>06</td>
+                </tr>
+                <tr>
+                    <td>Suporte</td>
+                    <td>07</td>
+                    <td>07</td>
+                    <td>07</td>
+                    <td>07</td>
+                    <td>07</td>
+                    <td>07</td>
+                    <td>07</td>
+                    <td>07</td>
+                    <td>07</td>
+                    <td>07</td>
+                    <td>07</td>
+                    <td>07</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
