@@ -11,8 +11,8 @@
 <body>
     <header>
         <h1>Menu responsivo</h1>
-        <span class="material-symbols-outlined" id="burguer">menu</span>
-        <menu>
+        <span class="material-symbols-outlined" id="burguer" onclick="clickMenu()">menu</span> <!-- parte do js para mostrar o menu é apartir de onclik e é continuado abaixo do main -->
+        <menu id="itens"> <!-- Foi adicionado id no menu para poder ser usado no JS -->
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -30,8 +30,20 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sunt asperiores animi libero quidem, officia vitae, rem nobis sint fugiat sequi quo! Veritatis temporibus fugit aspernatur deserunt rerum facere nobis reiciendis nemo, sit et. Possimus reiciendis molestias excepturi! Sed eos ullam optio fuga laudantium ratione possimus, porro reiciendis dolorum inventore quisquam officiis alias dicta velit modi rerum. Voluptas ut facilis aut dolore labore eius asperiores nulla, ex libero? Deserunt praesentium nam, veniam odio corrupti repudiandae. Sapiente placeat delectus voluptates mollitia enim! Maiores architecto iste enim tempore accusamus iure sequi dolorum magnam! Officia vel eius quos nihil suscipit, tempora vero voluptatem!</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') { /* Esse == é igual */
+                itens.style.display = 'none' /* Esse = é recebe */
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    
     <footer>
         <p>Site criado para exemplificar menu hambúrguer</p>
     </footer>
+   
 </body>
 </html>
