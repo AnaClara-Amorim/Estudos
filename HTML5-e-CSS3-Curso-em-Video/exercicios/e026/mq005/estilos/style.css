@@ -94,6 +94,7 @@ footer p {
     color: white;
     font-weight: bold;
     margin-top: 50px; /* Essa não é a melhor forma de posicionar o footer */
+    font-size: 0.5em;
 }
 
 footer a {
