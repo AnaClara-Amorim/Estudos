@@ -27,8 +27,22 @@ header h1 {
     color: white;
 }
 
-menu { 
+#burguer {
+    background-color: black;
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+#burguer:hover{
+    background-color: white;
+    color: black;
+    cursor: grab;
+}
+
+menu { 
+    display: none; /* Alterado de block pra none */
 }
 
 menu > ul {
@@ -44,6 +58,8 @@ menu > ul > li > a {
     color: white;
     text-align: center;
     border-top: 2px solid var(--cor2);
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 menu a:hover {
