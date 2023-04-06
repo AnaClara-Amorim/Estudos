@@ -43,6 +43,8 @@
     border-radius: 20px;
     overflow: hidden; /* Tudo que estiver fora some */
     box-shadow: 4px 4px 1px black;
+
+    transition: width 0.5s, height 0.5s; /* Animação */
  }
 
  #login > #imagem {
