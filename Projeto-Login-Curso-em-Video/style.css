@@ -1,7 +1,58 @@
 @charset "UTF-8";
 
-/* Cores
-Verde #49A09D n
-Lilás #5F2C82
-Azul #2F298F
- */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+
+ :root {
+    --cor1: #dd7dff;
+    --cor2: #2F298F;
+    --cor3: #49A09D;
+ }
+
+ * {
+    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+ }
+
+ body, html {
+    background-color: var(--cor1);
+    height: 100vh;
+    width: 100vw;
+ }
+
+ main { 
+    height: 100vh;
+    width: 100vw;
+ }
+
+ #titulo{
+    font-weight: 900;
+ }
+
+ #login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: whitesmoke;
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden; /* Tudo que estiver fora some */
+    box-shadow: 4px 4px 1px black;
+ }
+
+ #login > #imagem {
+    display: block;
+    background: var(--cor1) url(imagens/360_F_267402109_jZvsqRQUvSxohAOmcUt549jlapqoRHM0.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+ }
+
+ section#login > div#formulario {
+    display: block;
+    padding: 10px;
+ }
