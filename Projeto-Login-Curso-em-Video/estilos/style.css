@@ -47,7 +47,7 @@
 
  #login > #imagem {
     display: block;
-    background: var(--cor1) url(imagens/360_F_267402109_jZvsqRQUvSxohAOmcUt549jlapqoRHM0.jpg) no-repeat;
+    background: var(--cor1) url(../imagens/360_F_267402109_jZvsqRQUvSxohAOmcUt549jlapqoRHM0.jpg) no-repeat;
     height: 200px;
     background-size: cover;
  }
