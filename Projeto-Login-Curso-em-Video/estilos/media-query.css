@@ -1,6 +1,17 @@
 @charset "UTF-8";
 
+:root {
+    --cor1: #dd7dff;
+    --cor2: #2F298F;
+    --cor3: #49A09D;
+ }
+
 @media screen and (min-width: 768px) and (max-width:992px) {
+
+    body{
+        background-image: linear-gradient(to top, #2F298F, #dd7dff);
+    }
+
     #login {
         width: 80vw;
     }
@@ -17,6 +28,10 @@
 }
 
 @media screen and (min-width: 992px) {
+
+    body{
+        background-image: linear-gradient(to top, #2F298F, #dd7dff);
+    }
     
     #login {
         width: 950px;
