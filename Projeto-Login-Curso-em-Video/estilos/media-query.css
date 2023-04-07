@@ -14,6 +14,7 @@
 
     #login {
         width: 80vw;
+        height: 290px;
     }
     #login > #imagem {
         float: right;
