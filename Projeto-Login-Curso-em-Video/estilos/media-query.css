@@ -16,13 +16,13 @@
         width: 80vw;
     }
     #login > #imagem {
-        float: left;
+        float: right;
         width: 30%;
         height: 100%;
     }
 
     #login > #formulario {
-        float: right;
+        float: left;
         width: 70%;
     }
 }
@@ -46,5 +46,13 @@
     #formulario { 
         float: right;
         width: 50%;
+    }
+
+    #formulario > p {
+        font-size: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
     }
 }
