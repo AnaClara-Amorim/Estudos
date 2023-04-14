@@ -5,8 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entendendo o DOM</title>
+    <style>
+        body{
+            background-color: indigo;
+            color: whitesmoke;
+            font: normal 20pt Arial;
+        }
+    </style>
 </head>
 <body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <div id ="msg">Clique em mim</div>
     
-</body>
+    <script>
+        /* window.document.write('Olá mundo') Apesar de não ser o jeito mais recomendado de se colocar coisas é possível*/
+        // window.document.write(window.document.charset) mostra configuração utf8
+        // window.document.write(window.navigator.appName) mostra o nome do navegador
+        //window.document.write(window.document.URL) mostra url
+
+       /*  5 fomas de selecionar elementos na árvore DOM
+        Por Marca
+        getElementsByTagName(), é possível selecionar mais de um elemento
+        Por ID
+        Por Nome 
+        Por Classe 
+        Por Seletor */
+                // POR MARCA
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] // Pode fazer só document.get... O número 0 é o primeiro parágrafo (elemento)
+        //window.document.write('Está escrito assim: ' + p1.innerText)
+        p1.style.color = 'blue'
+        corpo.style.background = 'purple'
+        document.write(p1.innerHTML) //Com o innerHTML ele já vem com html
+        //window.alert(p1.innerText) //texto sem a formatação
+
+                // POR ID window.document.getElementById, seleciona um elemento só
+        //var d = window.document.getElementById('msg')
+        //d.style.background = 'black'
+        //d.innerText = 'Estou testando' abaixo é a mesma coisa, só é um comando maior
+        //window.document.getElementById('msg').innerText = "Estou testando"
+        
+                // POR NOME window.document.getElementsByName
+      //  var d = window.document.getElementsByName('msg')[0]
+      //  d.innerText = 'Segundo teste'
+      //  window.document.getElementsByName('msg').innerText='Teste'
+
+                // POR SELETOR OU QUERY SELECTOR
+
+                var d = window.document.querySelector('div#msg')
+                d.style.background='blue'
+                
+
+    </script>
 </html>
