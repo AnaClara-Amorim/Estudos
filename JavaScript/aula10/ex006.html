@@ -5,10 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background: plum;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <div id="area">
-        Interaja... (())
+    <!-- <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"> Quando clicar, método vai disparar a função "clicar" essa parte foi apagada, pois pode-se colocar addEventListener diretamente no script e deixar o html "limpo" -->
+        <div id="area">
+        Interaja...
     </div>
+    <!--https://developer.mozilla.org/en-US/docs/Web/Events-->
+    
+    <script>
+        var a = window.document.getElementById('area') /* Não é ideal colocar var fora */
+
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+
+        function clicar() {            
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrar(){
+            a.innerText = 'Entrou!'
+        }
+        function sair(){
+            a.innerText = 'Saiu!'
+            a.style.background = 'green'
+        }
+    </script>
 </body>
 </html>
