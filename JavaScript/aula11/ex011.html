@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio proposto</title>
+</head>
+<body>
+    <h1>Cheque sua nacionalidade</h1>
+    <input type="text" name="naci" id="naci">
+    <input type="button" value="Checar" onclick="checar()">
+    <div id="res"></div>
+
+    <script>
+        function checar() {
+            var nac = document.getElementById('naci')
+            var res = document.querySelector('div#res')
+            if (nac.value == 'Brasil'){ //value aqui para indicar que tipo é o elemento
+            res.innerHTML = `Você é brasileiro`
+                } else {
+                    res.innerHTML = `Você é estrangeito`
+                }
+        }
+    </script>
+</body>
+</html>
