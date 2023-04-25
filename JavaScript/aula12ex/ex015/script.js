@@ -20,3 +20,5 @@ function verificar() {
         res.innerHTML = `Detectamos ${genero} com ${idade} anos de idade.`
     }
 }
+
+//15:40

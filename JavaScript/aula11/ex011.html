@@ -16,10 +16,10 @@
         function checar() { //Função criada para checar quando acontecer o evento "onclick"
             var nac = document.getElementById('naci') //Para pegar o valo inserido no input text
             var res = document.querySelector('div#res') // Onde o resultado vai ser escrito
-            if (nac.value == 'Brasil'){ //value aqui para indicar que tipo é o elemento. Primeira condição, primeira resposta
-            res.innerHTML = `Você é brasileiro`
+            if (nac.value == 'Brasil' ){ //value aqui para indicar que tipo é o elemento. Primeira condição, primeira resposta
+                    res.innerHTML = `Você é <strong>brasileiro</strong>`
                 } else {
-                    res.innerHTML = `Você é estrangeito` // Segunda condição, segunda resposta 
+                    res.innerHTML = `Você é <strong>estrangeiro</strong>` // Segunda condição, segunda resposta 
                 }
         }
     </script>
