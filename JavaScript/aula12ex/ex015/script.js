@@ -44,4 +44,12 @@ function verificar() {
     }
 }
 
-//15:40
+/* Outro jeito de fazer: 
+
+if(fgen[0].checked) genero = 'homem';
+        else genero = 'mulher';
+
+        if(idade <= 10) img.setAttribute('src', `images/${genero}/baby.png`)    As imagens estão separadas em duas pastas diferentes aqui e são selecionadas de acordo com o genero escolhido
+        else if(idade <= 21) img.setAttribute('src', `images/${genero}/teen.png`)
+        else if(idade <= 50) img.setAttribute('src', `images/${genero}/adult.png`)
+        else img.setAttribute('src', `images/${genero}/old.png`) */
