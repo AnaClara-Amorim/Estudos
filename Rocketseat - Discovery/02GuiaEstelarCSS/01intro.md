@@ -400,7 +400,7 @@ color: inheritr; /* Herda a cor do elemento anterior */
 color: initial; /* Volta a sua cor inicial */
 color: unset; /* Pega a cor do contexto */
 
-## Background color 
+## Background 
 
     background-image: url()
     backgroundrepeat: no-repeat, repeat-x, repeat-y
@@ -410,5 +410,23 @@ color: unset; /* Pega a cor do contexto */
     /* Pricipais valores de background-position:
     background-position: top; bottom; left; right; center;
     
+    background-size: contain and cover; contain pode conter a imagem dentro, sem redimensionamento, e cover é com redimensionamento. Pode ser usado com porcentagem também. Uma vez ou duas. Auto é automático e já está implícito. 
 
+    background-origin: border-box; começa da borda
+    background-origin: padding-box; começa do começo do padding
+    background-origin: content-box; corta o padding
 
+    background-attachment: scroll;
+    background-attachment: fixed;
+    background-attachment: local;
+
+    background shorthand
+    background gradient 
+    background: linear-gradient(45deg, red, yellow)
+
+    Podemos aplicar múltiplos backgrounds em um mesmo elemento, podendo ter cor sólida, gradiente ou imagem. Para isso basta separar por vírgula cada background.
+
+    
+
+    
+    
