@@ -429,6 +429,7 @@ color: unset; /* Pega a cor do contexto */
 
 ## Posso ver e ouvir o HTML 
 
+# Audio e Video
 <video src= ""> </video> vídeo 
 
 <video controls>
@@ -443,3 +444,13 @@ Tag audio é semelhante a video
 </audio>
     
     Tag usada para trazer áudios e vídeos de fora é o iframe 
+
+# Imagens
+
+<img src="https://source.unsplash.com/random" 
+alt="Imagem aleatória" 
+title="Quando o mouse descansar em cima"
+>
+
+
+
