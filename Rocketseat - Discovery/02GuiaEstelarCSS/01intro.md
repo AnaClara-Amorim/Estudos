@@ -426,7 +426,20 @@ color: unset; /* Pega a cor do contexto */
 
     Podemos aplicar múltiplos backgrounds em um mesmo elemento, podendo ter cor sólida, gradiente ou imagem. Para isso basta separar por vírgula cada background.
 
-    
 
+## Posso ver e ouvir o HTML 
+
+<video src= ""> </video> vídeo 
+
+<video controls>
+    width ="500"
+    height = "500"
+    <sourcer src = "" type = "video/mp4"> 
+</video>
+
+Tag audio é semelhante a video 
+<audio>
+<source src="" type="audio/mp3">
+</audio>
     
-    
+    Tag usada para trazer áudios e vídeos de fora é o iframe 
