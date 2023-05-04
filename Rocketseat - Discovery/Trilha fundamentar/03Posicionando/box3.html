@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            margin: 0;
+            height: 100vh;            
+            grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer";
+
+            grid-template-rows: 25px 1fr 25px;
+            grid-template-columns: 1fr 200px;
+        }
+
+        header {
+            grid-area: header;
+          background-color: purple;      
+        }
+
+        main {
+            grid-area: main;
+            background-color: plum
+        }
+        aside {
+            grid-area: aside;
+            background-color: palevioletred;
+        }
+        footer {
+            grid-area: footer;
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <header>Topo</header>
+    <main>Conteúdo</main>
+    <aside>Infos adicionais</aside>
+    <footer>Rodapé</footer>
+</body>
+</html>
