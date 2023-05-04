@@ -7,8 +7,10 @@
     <title>Document</title>
     <style>
 
-    /*Por padrão, todos são static. 
-    Podemos colocar relative: top, right, bottom, left, z-index*/
+    /*Por padrão, todos são STATIC. 
+    Podemos colocar RELATIVE: top, right, bottom, left, z-index, mantém o espaço da div
+    ABSOLUTE: top, right, bottom, left, z-index elimina o espaço da div 
+    FIXED: top, right, bottom, left, z-index elemento fica fixo na página */
         .box {
             width: 50px;
             height: 50px;
@@ -17,9 +19,8 @@
 
         .box1 {
             background-color: red;
-            position: relative;
-            left: 100px;
-            top: 80px;
+            position: fixed;
+            top: 50px;
         }
 
         .box2 {
@@ -29,11 +30,14 @@
         .box3 {
             background-color: blueviolet;
         }
+
     </style>
 </head>
 <body>
-    <div class="box1 box"></div>
-    <div class="box2 box"></div>
-    <div class="box3 box"></div>
+    <main>
+        <div class="box1 box"></div>
+        <div class="box2 box"></div>
+        <div class="box3 box"></div>
+    </main>
 </body>
 </html>
