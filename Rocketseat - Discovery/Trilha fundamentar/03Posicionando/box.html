@@ -10,7 +10,8 @@
     /*Por padrão, todos são STATIC. 
     Podemos colocar RELATIVE: top, right, bottom, left, z-index, mantém o espaço da div
     ABSOLUTE: top, right, bottom, left, z-index elimina o espaço da div 
-    FIXED: top, right, bottom, left, z-index elemento fica fixo na página */
+    FIXED: top, right, bottom, left, z-index elemento fica fixo na página
+     */
         .box {
             width: 50px;
             height: 50px;
@@ -19,16 +20,25 @@
 
         .box1 {
             background-color: red;
-            position: fixed;
-            top: 50px;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            z-index: 4; /* Posiciona os elementos em camadas, na frente ou atrás*/
         }
 
         .box2 {
             background-color: palevioletred;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
         }
 
         .box3 {
             background-color: blueviolet;
+            position: absolute;
+            top: 15px;
+            left: 15px;
         }
 
     </style>
