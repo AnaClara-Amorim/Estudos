@@ -4,7 +4,7 @@ body {
     font-family: 'Poppins', sans-serif;
     max-width: 1280px;
     margin: 0 auto;
-    background-color: #5e5b5bad;
+    background-color: #5e5b5b;
     color: #333333;
 } 
 
@@ -63,13 +63,13 @@ main .listagem-pokemon {
 }
 
 .modo-escuro .cartao-hover {
-    background-color: #a8a8a8;
+    background-color: #343434;
 }
 
 main .cartao-pokemon .informacoes {
     display: flex;
     justify-content: space-between;
-    border: 3px solid #333333;
+    border: 3px solid #858585; /*  mudei aqui a cor original */
     border-radius: 10px;
 }
 
