@@ -121,8 +121,8 @@ main .cartao-pokemon .tipo { /* Na live, foi usada uma classe "tipo", buscar no 
 main .descricao {
     max-height: 80px;
     overflow-y: scroll;
-    font-size: 14px;
+    font-size: 15px;
     padding-right: 5px;
-    text-indent: 10px;
+    text-indent: 8px;
     text-align: center;
 }
