@@ -89,7 +89,7 @@ main .cartao-pokemon .tipos {
        gap: 15px;
 }
 
-main .cartao-pokemon .tipo { /* Na live, foi usada uma classe "tipo", buscar no código original, a solução aqui foi colocar as propriedades em cada tipo  */
+main .cartao-pokemon .tipo { 
     padding: 8px;
     border-radius: 10px;
 }
