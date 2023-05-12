@@ -84,37 +84,37 @@ main .cartao-pokemon .gif {
     height: 55px;
 }
 
-main .cartao-pokemon, .tipos {
+main .cartao-pokemon .tipos {
        display: flex;
         gap: 15px;
 }
 
-main .cartao-pokemon, .tipos { /* Na live, foi usada uma classe "tipo", buscar no código original, a solução aqui foi colocar as propriedades em cada tipo  */
+main .cartao-pokemon .tipo { /* Na live, foi usada uma classe "tipo", buscar no código original, a solução aqui foi colocar as propriedades em cada tipo  */
     padding: 8px;
     border-radius: 10px;
 }
 
-.tipo-grama {
+.grama {
     background-color: #7ac74c;    
 }
 
-.tipo-veneno { 
+.veneno { 
     background-color: #df67ddfb;    
 }
 
-.tipo-fogo { 
+.fogo { 
     background-color: #ee8130;    
 }
 
-.tipo-agua {
+.agua {
     background-color: #6390f0;    
 }
 
-.tipo-inseto {
+.inseto {
     background-color: #a6b91a;    
 }
 
-.tipo-voador {
+.voador {
     background-color: #a1a4a678;    
 }
 
