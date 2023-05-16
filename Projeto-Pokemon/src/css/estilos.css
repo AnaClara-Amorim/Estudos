@@ -8,6 +8,7 @@ body {
     color: #333333;
 } 
 
+
 body.modo-escuro {
     background-color: #212121;
     color: #121212;
@@ -97,7 +98,7 @@ main .cartao-pokemon .tipo {
 }
 
 .grama {
-    background-color: #7ac74c;    
+    background-color: #7ac74c;        
 }
 
 .veneno { 
