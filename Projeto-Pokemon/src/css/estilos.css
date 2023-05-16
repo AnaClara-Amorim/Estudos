@@ -72,7 +72,7 @@ main .cartao-pokemon .informacoes {
     display: flex;
     justify-content: space-between;
     border: 3px solid #582965; /*  mudei aqui a cor original */
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
 main .cartao-pokemon .informacoes span {
