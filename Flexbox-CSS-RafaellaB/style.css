@@ -1,0 +1,57 @@
+a {
+    display: flex;
+    justify-content: center;
+}
+
+
+.bloco1 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(180, 43, 226);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    order: 0; /* Ordena os elementos, tendo zero como o final. Por padrão é 0. Se duas classes com a mesma ordem, eles vão ficar intercalados  */
+    flex-grow: 0; /* Os blocos crescem quando a classe está selecionada, crescem em proporção por espaço possível. Crescem na mesma proporção, o máximo que puderem igualmente, se todas as classes estiverem com flex-grow. */
+    flex-shrink: 1; /* Tem a habilidade de se encolher caso necessário */
+    flex-basis: auto; /* Define tamanho do elemento. Tem por padrão auto e é diferente de 0 */
+    flex: 0 1 auto; /* Forma compacta, segue com grow, shrink e basis */
+}
+
+.bloco2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(226, 43, 165);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.bloco3 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(226, 43, 61);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex; /* Identifica que a tag vai ser o container de flexbox */
+    flex-direction: row; /* Define o eixo principal, por padrão é row, horizontal. Pode ser row, row-reverse, column, column-revers, etc */
+    justify-content: center; /* É o que define onde o elemento vai ficar posicionado no eixo principal, por padrão é flex-start. Pode ser flex-end, center, space-between, space-around, etc */
+    height: 500px;
+    align-items: center; /* Alinhamento no eixo vertical, perpendicular. Pode ser flex-start, flex-end, center, stretch, baseline etc */
+    flex-wrap: wrap; /* Por padrão, é wrap, mas quando definido como wrap, ele quebra a linha */    
+    align-content: space-around; /* É para alinhar elementos em mais de uma linha no eixo perpendicular. Pode ser flex-start, flex-end, flex-center, etc. Por padrão é center. */
+    gap: 20px; /* Dá espaçamento nos elementos contidos no container. Pode definir row-gap e column-gap */
+    row-gap: 10px;
+    column-gap: 30px;
+}
