@@ -61,6 +61,51 @@ where ano = '2016'; /*Soma*/
 
 select avg(totaulas) from cursos; /*Dá a média*/
 
+/*Selecionar todas as alunAs*/
+select * from gafanhotos
+where sexo = 'f';
+
+/*Selecionar uma lista com os ddos de todos que nasceram entre 1/jan/2000 e 31/dez/2015*/
+
+select * from gafanhotos 
+where nascimento between '2000-01-01' and '2015-12-31';
+
+/*Uma lista de todo os homems que trabalham com programação*/
+
+select * from gafanhotos
+where profissao = 'programador' and sexo = 'm';
+
+/*Uma lista com todos os dados de todas as mulheres que nasceram no Brasil e que tem seu nome iniciando com a letra J*/
+
+select * from gafanhotos
+where nacionalidade = 'Brasil' and nome like 'J%';
+
+/*Uma lista com o nome e a nascionalidade de todos homens que tem
+Silva no nome, não nasceram no brasil e pesam menos de 100kg*/
+
+select nome, nacionalidade, peso from gafanhotos 
+where sexo = 'M' and nacionalidade != 'Brasil' 
+and peso < '100' and nome like '%Silva%';
+
+/*Qual a maior altura dos homens no Brasil?*/
+
+select max(altura) from gafanhotos
+where sexo = 'm' and nacionalidade = 'brasil';
+
+/*Qual a média de peso de todos?*/
+
+select avg(peso) from gafanhotos;
+
+/*Qual é o menor peso entre os gafanhotos Mulheres que nasceram
+ fora do Brasil e entre 01/Jan/1990 e 31/Dez/2000?*/
+ select min(peso), nome from gafanhotos
+ where sexo = 'F' and nacionalidade != 'Brasil' and 
+ nascimento between '1990-01-01' and '2000-12-31';
+ 
+/*Quantas gafanhotos Mulheres tem mais de 1.90cm de altura?*/
+ select count(altura) from gafanhotos
+ where sexo = 'F' and altura > '1.90';
+
 
 
 
