@@ -1,6 +1,7 @@
 package com.loiane.cursoJava.aula12;
 import java.util.Scanner;
 
+
 public class LeituraDadosTeclado {
 
 	public static void main(String[] args) {
