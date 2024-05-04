@@ -8,4 +8,16 @@
 
 #print (abs(54-44)) valor absoluto
 
-#12:49 min
+#a = 3
+#b = 4
+#c = a * a + b * b
+#print (c)
+
+#s1 = 'ant'
+#s2 = 'bat'
+#s3 = 'cot'
+#res = s1 + ' ' +  s2 + ' ' + s3
+#res2 = 10 * (s1 + ' ')
+#print(res)
+#print (res2)
+
