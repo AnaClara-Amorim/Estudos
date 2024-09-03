@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexibe Box</title>
+
+    <style>
+
+    div.container {
+        background-color: bisque;
+        display: flex;
+
+        /*Direções: 
+        row (automática)
+        row-reverse da direita pra esquerda
+        column de cima pra baixo
+        column-reverse de baixo pra cima
+
+        Eixos
+
+        No row:
+        main-axis da esqueda pra direita (main-start, main-end)
+        cross-axis de cima pra baixo (cross-star, cross-end) 
+
+        row-reverse: da direita pra esquerda e de cima pra baixo
+        
+        collumn: de cima pra baixo e da esquerda pra direita
+
+        collumn-reverse: de cima pra baixo e da esquerda pra direita 
+
+
+        */
+        flex-direction: row;
+
+        /*flex-wrap faz com que os blocos dentros sejam quebrados no sentido do cross axis ou não. o padrão é nowrap, que não quebra. há também o wrap-reverse, que quebra no sentido oposto ao eixo transversal.
+        */
+    }
+
+    div.item{
+        background-color: pink;
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+</body>
+</html>
