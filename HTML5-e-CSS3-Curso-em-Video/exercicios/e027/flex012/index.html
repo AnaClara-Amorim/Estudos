@@ -18,9 +18,27 @@
         border: 1px solid black;
     
         text-align: center;
-        flex-basis: 250px;
-        flex-grow: 0; /*Tem valores 0 e 1 e alguns diferentes*/
-        flex-shrink: 1;
+        
+        /*FLEX = FLEX-GROW + FLEX-SHRING + FLEX-BASIS*/
+        
+    }
+
+    div#cXA{
+        flex: 1 0 200px;
+        /*MAIS USADOS
+        flex: 0 1 auto  ou initil// padrão
+        flex: 0 0 auto ou none // nada flexivel
+        flex: 1 1 auto ou auto // mais flexivel
+        flex com um valor só: valor + 1 auto
+        */
+    }
+
+    div#cxB{
+        flex: 1 1 150px;
+    }
+
+    div#cxC{
+        flex: 1 8 auto;
     }
 
     </style>
